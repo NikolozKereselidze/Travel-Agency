@@ -1,0 +1,55 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+  max-width: fit-content;
+  border-radius: 0px 20px 20px 0px;
+  padding-left: 18.2rem;
+  margin-bottom: 10rem;
+  background-color: #fff;
+}
+
+.details {
+  padding: 3.8rem 0;
+  display: flex;
+  gap: 4rem;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.2rem;
+}
+
+.label {
+  color: #767e86;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.input {
+  padding: 1rem;
+  border: none;
+  border-bottom: 1px solid #000;
+  color: #172432;
+  font-size: 1.4rem;
+}
+
+.bookButton {
+  flex: 1;
+  align-self: stretch;
+}
+
+.button {
+  padding: 2rem;
+  color: #fff;
+  border-radius: 0px 20px 20px 0px;
+  cursor: pointer;
+  height: 100%;
+  background-color: #ff7757;
+  font-size: 2rem;
+  border: none;
+}
