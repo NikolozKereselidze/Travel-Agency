@@ -1,0 +1,51 @@
+.card {
+  min-width: 30rem;
+  height: 45rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  position: relative;
+}
+
+.imgInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.8rem;
+  position: absolute;
+  bottom: 1.2rem;
+  left: 1.2rem;
+}
+
+.imgTitle,
+.imgSubtitle {
+  color: #fff;
+}
+
+.imgTitle {
+  font-family: "Playfair Display";
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.imgSubtitle {
+  color: #fff;
+  font-family: "Rubik";
+  font-size: 1.6rem;
+  font-weight: 400;
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.imgSubtitle > i {
+  color: #fff;
+}
