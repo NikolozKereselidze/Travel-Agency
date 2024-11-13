@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "../../styles/HeaderBook.module.css";
+import styles from "../../styles/Hero/HeaderBook.module.css";
 
 const HeaderBook = () => {
   const [destination, setDestination] = useState("Georgia");
