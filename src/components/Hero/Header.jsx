@@ -1,17 +1,19 @@
 import { useState } from "react";
 import logo from "../../assets/logo.svg";
-import styles from "../../styles/Header.module.css";
+import styles from "../../styles//Hero/Header.module.css";
 
 const Header = () => {
   const [active, setActive] = useState("Home");
 
-  const handleActiveClick = (page) => {
+  const handleActiveClick = (page, href) => {
     setActive(page);
+    const targetElement = document.querySelector(href);
+    targetElement?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
   const links = [
-    { name: "Home", href: "" },
-    { name: "Explore", href: "" },
+    { name: "Home", href: "#home" },
+    { name: "Explore", href: "#destinations" },
     { name: "Travel", href: "" },
     { name: "Blog", href: "" },
     { name: "Pricing", href: "" },
@@ -31,7 +33,7 @@ const Header = () => {
                 }`}
                 onClick={(e) => {
                   e.preventDefault();
-                  handleActiveClick(link.name);
+                  handleActiveClick(link.name, link.href);
                 }}
               >
                 {link.name}

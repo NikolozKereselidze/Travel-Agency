@@ -1,4 +1,4 @@
-import styles from "../../styles/HeroSidebar.module.css";
+import styles from "../../styles/Hero/HeroSidebar.module.css";
 
 const HeroSidebar = () => {
   const circleNumber = 4;
@@ -35,26 +35,28 @@ const HeroSidebar = () => {
         <path
           d="M15 7L8 0.999999L1 7"
           stroke="white"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </svg>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="8"
-        viewBox="0 0 16 8"
-        fill="none"
-      >
-        <path
-          d="M1 1L8 7L15 1"
-          stroke="#FF7757"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-      </svg>
+      <a href="#destinations">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="8"
+          viewBox="0 0 16 8"
+          fill="none"
+        >
+          <path
+            d="M1 1L8 7L15 1"
+            stroke="#FF7757"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+      </a>
     </div>
   );
 };
