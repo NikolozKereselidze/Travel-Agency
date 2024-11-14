@@ -1,23 +1,31 @@
-import { useState } from "react";
+import { Suspense, lazy } from "react";
 import "./App.css";
-import Header from "./components/Hero/Header";
-import Hero from "./components/Hero/Hero";
-import HeaderBook from "./components/Hero/HeaderBook";
-import HeroSidebar from "./components/Hero/HeroSidebar";
-import Destinations from "./components/Destinations/Destinations";
+import LoadingSpinner from "./components/LoadingSpinner";
+
+const Header = lazy(() => import("./components/Hero/Header"));
+const Hero = lazy(() => import("./components/Hero/Hero"));
+const HeaderBook = lazy(() => import("./components/Hero/HeaderBook"));
+const HeroSidebar = lazy(() => import("./components/Hero/HeroSidebar"));
+const Destinations = lazy(() =>
+  import("./components/Destinations/Destinations")
+);
 
 function App() {
   return (
     <>
-      <section className="heroWrapper" id="home">
-        <Header />
-        <Hero />
-        <HeaderBook />
-        <HeroSidebar />
-      </section>
-      <section className="destinationsWrapper" id="destinations">
-        <Destinations />
-      </section>
+      <Suspense fallback={<LoadingSpinner />}>
+        <section className="heroWrapper" id="home">
+          <Header />
+          <Hero />
+          <HeaderBook />
+          <HeroSidebar />
+        </section>
+      </Suspense>
+      <Suspense fallback={<LoadingSpinner />}>
+        <section className="destinationsWrapper" id="destinations">
+          <Destinations />
+        </section>
+      </Suspense>
     </>
   );
 }
