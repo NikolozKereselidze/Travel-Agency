@@ -6,7 +6,7 @@
       rgba(0, 0, 0, 0.3) 0%,
       rgba(0, 0, 0, 0.3) 100%
     ),
-    url("./assets/header-background.jpeg") no-repeat;
+    url("./assets/header-background.webp") no-repeat;
   background-position: center;
   background-size: cover;
 }
