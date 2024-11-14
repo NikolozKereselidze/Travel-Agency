@@ -80,8 +80,8 @@ const Destinations = () => {
     <>
       <div className={styles.info}>
         <div className={styles.title}>
-          <h3>Popular Destinations</h3>
-          <span>
+          <h3 className={styles.destinationTitle}>Popular Destinations</h3>
+          <span className={styles.destinationDescription}>
             Most popular destinations around the world, from historical places
             to natural wonders.
           </span>

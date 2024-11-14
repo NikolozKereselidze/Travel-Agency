@@ -1,4 +1,4 @@
-h3 {
+.destinationTitle {
   color: #172432;
   font-family: "Playfair Display";
   font-size: 5.2rem;
@@ -7,7 +7,7 @@ h3 {
   line-height: normal;
 }
 
-h3::after {
+.destinationTitle::after {
   content: "";
   display: block;
   width: 32rem;
@@ -16,7 +16,7 @@ h3::after {
   border-bottom: 1px solid #ff7757;
 }
 
-span {
+.destinationDescription {
   color: #767e86;
   font-family: Rubik;
   font-size: 1.8rem;
