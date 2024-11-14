@@ -1,4 +1,3 @@
-import berlin from "../../assets/destinations/berlin.jpeg";
 import styles from "../../styles/Destinations/DestinationCard.module.css";
 
 const DestinationCard = ({ image, title, location }) => {
