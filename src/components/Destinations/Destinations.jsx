@@ -1,12 +1,12 @@
 import styles from "../../styles/Destinations/Destinations.module.css";
 import DestinationCard from "./DestinationCard";
 
-import berlin from "../../assets/destinations/berlin.jpeg";
-import london from "../../assets/destinations/london.jpeg";
-import venice from "../../assets/destinations/venice.jpeg";
-import lisbon from "../../assets/destinations/lisbon.jpeg";
-import tbilisi from "../../assets/destinations/tbilisi.jpeg";
-import paris from "../../assets/destinations/paris.jpeg";
+import berlin from "../../assets/destinations/berlin.webp";
+import london from "../../assets/destinations/london.webp";
+import venice from "../../assets/destinations/venice.webp";
+import lisbon from "../../assets/destinations/lisbon.webp";
+import tbilisi from "../../assets/destinations/tbilisi.webp";
+import paris from "../../assets/destinations/paris.webp";
 import { useEffect, useState } from "react";
 
 const destinations = [
