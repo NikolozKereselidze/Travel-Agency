@@ -11,9 +11,9 @@
   background-size: cover;
 }
 
-.destinationsWrapper {
+.sectionsWrapper {
   display: flex;
-  padding: 14rem 0px 14rem 18.2rem;
+  padding: 10rem 0px 10rem 18.2rem;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
