@@ -14,7 +14,7 @@ const Header = () => {
   const links = [
     { name: "Home", href: "#home" },
     { name: "Explore", href: "#destinations" },
-    { name: "Travel", href: "" },
+    { name: "Travel", href: "#offer" },
     { name: "Blog", href: "" },
     { name: "Pricing", href: "" },
   ];

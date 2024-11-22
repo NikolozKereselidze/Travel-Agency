@@ -1,0 +1,7 @@
+.cardWrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  gap: 2rem;
+  padding-right: 10rem;
+  padding-top: 4.8rem;
+}

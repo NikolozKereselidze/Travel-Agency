@@ -1,6 +1,7 @@
 import { Suspense, lazy } from "react";
 import "./App.css";
 import LoadingSpinner from "./components/LoadingSpinner";
+import Offer from "./components/Offer/Offer";
 
 const Header = lazy(() => import("./components/Hero/Header"));
 const Hero = lazy(() => import("./components/Hero/Hero"));
@@ -22,8 +23,13 @@ function App() {
         </section>
       </Suspense>
       <Suspense fallback={<LoadingSpinner />}>
-        <section className="destinationsWrapper" id="destinations">
+        <section className="sectionsWrapper" id="destinations">
           <Destinations />
+        </section>
+      </Suspense>
+      <Suspense fallback={<LoadingSpinner />}>
+        <section className="sectionsWrapper" id="offer">
+          <Offer />
         </section>
       </Suspense>
     </>

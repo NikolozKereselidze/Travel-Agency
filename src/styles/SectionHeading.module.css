@@ -1,0 +1,33 @@
+.infoWrapper {
+  flex: 1 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.title {
+  color: #172432;
+  font-family: "Playfair Display";
+  font-size: 5.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  width: 30rem;
+  height: 3px;
+  margin-top: 1.4rem;
+  border-bottom: 1px solid #ff7757;
+}
+
+.description {
+  color: #767e86;
+  font-family: Rubik;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
