@@ -4,6 +4,7 @@ import LoadingSpinner from "./components/LoadingSpinner";
 import Offer from "./components/Offer/Offer";
 import Blog from "./components/Blog/Blog";
 import Testimonials from "./components/Testimonials/Testimonials";
+import Footer from "./components/Footer/Footer";
 
 const Header = lazy(() => import("./components/Hero/Header"));
 const Hero = lazy(() => import("./components/Hero/Hero"));
@@ -44,6 +45,7 @@ function App() {
           <Testimonials />
         </section>
       </Suspense>
+      <Footer />
     </>
   );
 }

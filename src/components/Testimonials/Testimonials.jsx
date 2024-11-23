@@ -5,7 +5,7 @@ import TestimonialsCard from "./TestimonialsCard";
 import johnStevens from "../../assets/avatars/johnStevens.webp";
 import mariaGarcia from "../../assets/avatars/mariaGarcia.webp";
 import davidLee from "../../assets/avatars/davidLee.webp";
-import useIntersectionObserver from "../hooks/useIntersectionObserver";
+import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 
 const Testimonials = () => {
   const [ref, isIntersecting] = useIntersectionObserver();
