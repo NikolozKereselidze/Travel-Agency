@@ -13,9 +13,13 @@
 
 .sectionsWrapper {
   display: flex;
-  padding: 10rem 0px 10rem 18.2rem;
+  padding: 10rem 0px 10rem 10rem;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 10rem;
+}
+
+.fa-star {
+  color: #ffc107;
 }

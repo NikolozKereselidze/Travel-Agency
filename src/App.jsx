@@ -3,6 +3,7 @@ import "./App.css";
 import LoadingSpinner from "./components/LoadingSpinner";
 import Offer from "./components/Offer/Offer";
 import Blog from "./components/Blog/Blog";
+import Testimonials from "./components/Testimonials/Testimonials";
 
 const Header = lazy(() => import("./components/Hero/Header"));
 const Hero = lazy(() => import("./components/Hero/Hero"));
@@ -36,6 +37,11 @@ function App() {
       <Suspense fallback={<LoadingSpinner />}>
         <section className="sectionsWrapper" id="blog">
           <Blog />
+        </section>
+      </Suspense>
+      <Suspense fallback={<LoadingSpinner />}>
+        <section className="sectionsWrapper" id="testimonials">
+          <Testimonials />
         </section>
       </Suspense>
     </>

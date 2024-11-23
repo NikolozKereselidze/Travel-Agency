@@ -1,0 +1,42 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  background-color: #f5f6f7;
+  position: relative;
+  padding: 2.6rem 2rem;
+  padding-top: 4rem;
+  border-radius: 6px;
+}
+
+.img {
+  top: -3.8rem;
+  left: 2rem;
+  position: absolute;
+  width: 6rem;
+}
+
+.comment {
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  color: #5e5e5e;
+}
+
+.stars {
+  display: flex;
+  gap: 0.4rem;
+  font-size: 1.2rem;
+}
+
+.author {
+  color: #5e5e5e;
+  font-family: "Playfair Display";
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.workplace {
+  color: #5e5e5e;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
