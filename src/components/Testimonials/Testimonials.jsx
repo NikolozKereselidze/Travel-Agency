@@ -44,7 +44,7 @@ const Testimonials = () => {
     <div
       ref={ref}
       className={`${styles.testimonialsSection} ${
-        isIntersecting ? styles.animate : ""
+        isIntersecting ? "animate" : ""
       }`}
     >
       <SectionHeading

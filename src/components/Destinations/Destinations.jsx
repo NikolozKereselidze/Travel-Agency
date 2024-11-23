@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "../../styles/Destinations/Destinations.module.css";
 import DestinationCard from "./DestinationCard";
 import SectionHeading from "../SectionHeading";
@@ -9,8 +9,17 @@ import venice from "../../assets/destinations/venice.webp";
 import lisbon from "../../assets/destinations/lisbon.webp";
 import tbilisi from "../../assets/destinations/tbilisi.webp";
 import paris from "../../assets/destinations/paris.webp";
+import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 
 const Destinations = () => {
+  const [ref, isIntersecting] = useIntersectionObserver();
+
+  useEffect(() => {
+    if (isIntersecting) {
+      ref.current.classList.add(styles.visible);
+    }
+  }, [isIntersecting, ref]);
+
   const destinations = [
     { image: tbilisi, title: "Old Tbilisi", location: "Tbilisi, Georgia" },
     { image: paris, title: "Eiffel Tower", location: "Paris, France" },
@@ -45,7 +54,10 @@ const Destinations = () => {
 
   return (
     <>
-      <div className={styles.info}>
+      <div
+        ref={ref}
+        className={`${styles.info} ${isIntersecting ? "animate" : ""}`}
+      >
         <SectionHeading
           title="Popular Destinations"
           description="Most popular destinations around the world, from historical places to natural wonders."

@@ -1,10 +1,23 @@
 import styles from "../../styles/Blog/Blog.module.css";
 import SectionHeading from "../SectionHeading";
 import cinnqueTerre from "../../assets/destinations/cinqueTerre.webp";
+import useIntersectionObserver from "../../hooks/useIntersectionObserver";
+import { useEffect } from "react";
 
 const Blog = () => {
+  const [ref, isIntersecting] = useIntersectionObserver();
+
+  useEffect(() => {
+    if (isIntersecting) {
+      ref.current.classList.add(styles.visible);
+    }
+  }, [isIntersecting, ref]);
+
   return (
-    <div className={styles.blogContainer}>
+    <div
+      ref={ref}
+      className={`${styles.blogContainer} ${isIntersecting ? "animate" : ""}`}
+    >
       <SectionHeading
         title="Our Blog"
         description="An insight the incredible experience in the world"

@@ -31,6 +31,8 @@
   align-items: flex-end;
   gap: 3.2rem;
   align-self: stretch;
+  opacity: 0;
+  transform: translateY(20px);
 }
 
 .title {

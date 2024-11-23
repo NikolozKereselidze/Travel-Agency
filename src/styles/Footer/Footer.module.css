@@ -4,6 +4,9 @@
   padding: 20rem 18rem 14rem 18rem;
   display: flex;
   position: relative;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
 }
 
 .content {

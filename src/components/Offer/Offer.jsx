@@ -5,8 +5,18 @@ import styles from "../../styles/Offer/Offer.module.css";
 import kyoto from "../../assets/destinations/kyoto.webp";
 import rome from "../../assets/destinations/rome.webp";
 import tokyo from "../../assets/destinations/tokyo.webp";
+import useIntersectionObserver from "../../hooks/useIntersectionObserver";
+import { useEffect } from "react";
 
 const Offer = () => {
+  const [ref, isIntersecting] = useIntersectionObserver();
+
+  useEffect(() => {
+    if (isIntersecting) {
+      ref.current.classList.add(styles.visible);
+    }
+  }, [isIntersecting, ref]);
+
   const destinations = [
     {
       image: kyoto,
@@ -34,7 +44,10 @@ const Offer = () => {
     },
   ];
   return (
-    <div>
+    <div
+      ref={ref}
+      className={`${styles.offerWrapper} ${isIntersecting ? "animate" : ""}`}
+    >
       <SectionHeading
         title="Special Offer"
         description="check out our special offer and discounts"

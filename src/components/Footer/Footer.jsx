@@ -2,8 +2,12 @@ import styles from "../../styles/Footer/Footer.module.css";
 import logo from "../../assets/logo.svg";
 import FooterList from "./FooterList";
 import NewsLetter from "./Newsletter";
+import useIntersectionObserver from "../../hooks/useIntersectionObserver";
+import { useEffect } from "react";
 
 const Footer = () => {
+  const [ref, isIntersecting] = useIntersectionObserver();
+
   const list = [
     {
       heading: "Menu",
@@ -22,8 +26,18 @@ const Footer = () => {
       ],
     },
   ];
+
+  useEffect(() => {
+    if (isIntersecting) {
+      ref.current.classList.add(styles.visible);
+    }
+  }, [isIntersecting, ref]);
+
   return (
-    <div className={styles.footer}>
+    <div
+      ref={ref}
+      className={`${styles.footer} ${isIntersecting ? "animate" : ""}`}
+    >
       <div className={styles.content}>
         <div className={styles.logo}>
           <img src={logo} alt="logo" />
