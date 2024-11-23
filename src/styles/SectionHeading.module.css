@@ -1,5 +1,8 @@
 .infoWrapper {
-  flex: 1 0 0;
+  display: inline-block;
+}
+
+.infoContainer {
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
@@ -17,10 +20,10 @@
 .title::after {
   content: "";
   display: block;
-  width: 30rem;
+  width: 50%;
   height: 3px;
   margin-top: 1.4rem;
-  border-bottom: 1px solid #ff7757;
+  border-bottom: 1.8px solid #ff7757;
 }
 
 .description {
