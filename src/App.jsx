@@ -26,7 +26,10 @@ function App() {
         </section>
       </Suspense>
       <Suspense fallback={<LoadingSpinner />}>
-        <section className="sectionsWrapper" id="destinations">
+        <section
+          className="sectionsWrapper destinationsSection"
+          id="destinations"
+        >
           <Destinations />
         </section>
       </Suspense>

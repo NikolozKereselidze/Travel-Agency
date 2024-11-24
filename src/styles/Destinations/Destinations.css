@@ -1,0 +1,13 @@
+.slick-prev,
+.slick-next {
+  background: #fff !important;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  color: orange !important;
+}
+
+.slick-slide {
+  padding: 0 1rem;
+}

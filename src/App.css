@@ -20,6 +20,11 @@
   gap: 10rem;
 }
 
+.destinationsSection {
+  display: block;
+  padding-right: 3.2rem;
+}
+
 .fa-star {
   color: #ffc107;
 }
