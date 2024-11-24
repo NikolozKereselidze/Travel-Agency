@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "../../assets/logo.svg";
+import Logo from "../../assets/Logo";
 import styles from "../../styles//Hero/Header.module.css";
 
 const Header = () => {
@@ -21,7 +21,7 @@ const Header = () => {
 
   return (
     <div className={styles.headerWrapper}>
-      <img src={logo} alt="logo" />
+      <Logo />
       <div>
         <ul className={styles.headerLinksWrapper}>
           {links.map((link, index) => (

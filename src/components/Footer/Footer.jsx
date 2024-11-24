@@ -1,5 +1,6 @@
 import styles from "../../styles/Footer/Footer.module.css";
-import logo from "../../assets/logo.svg";
+// import logo from "../../assets/logo.svg";
+import Logo from "../../assets/Logo";
 import FooterList from "./FooterList";
 import NewsLetter from "./Newsletter";
 import useIntersectionObserver from "../../hooks/useIntersectionObserver";
@@ -40,7 +41,7 @@ const Footer = () => {
     >
       <div className={styles.content}>
         <div className={styles.logo}>
-          <img src={logo} alt="logo" />
+          <Logo />
           <span>Copyright © Travellian 2024 All rights reserved</span>
         </div>
         {list.map((el) => (
