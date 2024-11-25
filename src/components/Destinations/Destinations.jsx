@@ -35,12 +35,27 @@ const Destinations = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1152,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
   return (
-    <div className={styles.destinationsSection}>
+    <div>
       <SectionHeading
         title="Popular Destinations"
         description="Most popular destinations around the world, from historical places to natural wonders."

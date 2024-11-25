@@ -3,11 +3,20 @@
   background: #fff !important;
 }
 
-.slick-prev::before,
-.slick-next::before {
-  color: orange !important;
+.slick-dots li button:before {
+  top: 1.2rem;
 }
 
-.slick-slide {
-  padding: 0 1rem;
+@media screen and (min-width: 768px) {
+  .slick-slider .slick-track,
+  .slick-slider .slick-list {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .slick-prev::before,
+  .slick-next::before {
+    color: #ff7757 !important;
+    font-size: 2.6rem;
+  }
 }

@@ -49,3 +49,15 @@
 .imgSubtitle > i {
   color: #fff;
 }
+
+@media screen and (max-width: 768px) {
+  .card {
+    height: 35rem;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .card {
+    height: 25rem;
+  }
+}
