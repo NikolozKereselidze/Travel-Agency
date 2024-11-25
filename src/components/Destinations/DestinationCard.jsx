@@ -6,7 +6,6 @@ const DestinationCard = ({ image, title, location }) => {
   const [loadedImage, setLoadedImage] = useState("");
   const [ref, isIntersecting] = useIntersectionObserver({
     triggerOnce: true,
-    threshold: 0.1,
   });
 
   useEffect(() => {

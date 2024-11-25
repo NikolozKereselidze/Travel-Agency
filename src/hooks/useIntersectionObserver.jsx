@@ -5,8 +5,11 @@ const useIntersectionObserver = (options) => {
   const ref = useRef(null);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(([entry]) => {
-      setIsIntersecting(entry.isIntersecting);
+    const observer = new IntersectionObserver(([entry], observer) => {
+      if (entry.isIntersecting) {
+        setIsIntersecting(true);
+        observer.unobserve(entry.target); // Stop observing after the first intersection
+      }
     }, options);
 
     if (ref.current) {
