@@ -30,6 +30,7 @@
 
 .card {
   display: flex;
+  flex: 1 1 0;
   flex-direction: column;
   height: 100%;
   transition: transform 0.2s ease;
@@ -131,5 +132,19 @@
   }
   100% {
     background-position: -200% 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .details {
+    padding: 2rem 1.8rem;
+  }
+
+  .location {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1.3rem;
   }
 }
