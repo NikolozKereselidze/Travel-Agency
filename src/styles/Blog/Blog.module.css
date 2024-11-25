@@ -64,3 +64,43 @@
 .readMore:hover {
   background-color: #ff5733;
 }
+
+@media screen and (max-width: 1152px) {
+  .blogWrapper {
+    padding-right: 0;
+  }
+  .description {
+    margin-right: 0;
+    justify-content: flex-start;
+  }
+  .description > h3 {
+    font-size: 2.8rem;
+  }
+
+  .description > p {
+    color: #3f474a;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .blogWrapper {
+    flex-direction: column;
+    gap: 3.4rem;
+  }
+
+  .imgWrapper {
+    overflow: visible;
+    height: 35rem;
+  }
+
+  .imgWrapper > img {
+    border-radius: 8px;
+  }
+
+  .description > h3 {
+    font-size: 2.4rem;
+  }
+}
