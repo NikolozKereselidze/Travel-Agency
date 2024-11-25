@@ -1,0 +1,28 @@
+.navWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navWrapper > svg {
+  width: fit-content;
+  height: 3rem;
+}
+
+.navIcon {
+  cursor: pointer;
+  color: #fff;
+  font-size: 2.4rem;
+}
+
+@media screen and (max-width: 475px) {
+  .navWrapper > svg {
+    height: 2.4rem;
+  }
+}

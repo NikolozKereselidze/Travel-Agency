@@ -6,19 +6,6 @@
   padding-left: 18.2rem;
 }
 
-.headerLinksWrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 3.2rem;
-  list-style: none;
-}
-
-.headerLink {
-  text-decoration: none;
-}
-
-.headerLink,
 .signupButton,
 .loginButton {
   color: #fff;
@@ -41,6 +28,30 @@
   padding: 1rem 2.2rem;
 }
 
-.active {
-  border-bottom: 2px solid #ff7757;
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1440px) {
+  .headerWrapper {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media screen and (max-width: 1152px) {
+  .headerWrapper {
+    padding: 2rem;
+  }
+
+  .headerButtons {
+    gap: 2rem;
+  }
+
+  .loginButton,
+  .signupButton {
+    font-size: 1.6rem;
+  }
+
+  .signupButton {
+    padding: 0.6rem 2.2rem;
+  }
 }
