@@ -10,6 +10,7 @@ const NewsLetter = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // Handle form submission logic here
     alert("Email submitted:", email);
     setEmail("");
   };

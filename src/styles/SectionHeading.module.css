@@ -27,10 +27,36 @@
 }
 
 .description {
-  color: #767e86;
+  color: #3d3f43;
   font-family: Rubik;
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+@media screen and (max-width: 1152px) {
+  .title {
+    font-size: 4.2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 3.8rem;
+  }
+
+  .description {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .title {
+    font-size: 3rem;
+  }
+
+  .description {
+    font-size: 1.4rem;
+  }
 }

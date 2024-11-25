@@ -1,7 +1,7 @@
 .footer {
   margin-top: 10rem;
   background-color: #172432;
-  padding: 20rem 18rem 14rem 18rem;
+  padding: 20rem 9rem 14rem 9rem;
   display: flex;
   position: relative;
   opacity: 0;
@@ -114,4 +114,45 @@
   color: #fff;
   background-color: #ff7757;
   padding: 1rem 2rem;
+}
+
+@media screen and (max-width: 1152px) {
+  .footer {
+    padding: 20rem 2rem 14rem 2rem;
+  }
+
+  .logo {
+    width: 20rem;
+  }
+
+  .content {
+    gap: 4rem;
+  }
+
+  .newsletter {
+    padding: 2rem 2.4rem;
+  }
+
+  .newsletterHeading {
+    font-size: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding-bottom: 4.8rem;
+  }
+  .content {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .logo {
+    align-self: center;
+    width: 26rem;
+  }
+
+  .newsletter {
+    flex-direction: column;
+    gap: 2.4rem;
+  }
 }
