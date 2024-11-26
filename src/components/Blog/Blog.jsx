@@ -24,7 +24,7 @@ const Blog = () => {
       />
       <div className={styles.blogWrapper}>
         <div className={styles.imgWrapper}>
-          <img src={cinnqueTerre} />
+          <img src={cinnqueTerre} alt="Italy, clinique terre" />
         </div>
         <div className={styles.description}>
           <h3>

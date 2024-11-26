@@ -54,6 +54,8 @@
 
 .links {
   cursor: pointer;
+  color: #fff;
+  text-decoration: none;
 }
 
 .newsletter {

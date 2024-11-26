@@ -5,8 +5,6 @@ import HeroSidebar from "../Hero/HeroSidebar.jsx";
 const Navigation = ({ mobile, openModal, modalHandler }) => {
   const [active, setActive] = useState("Home");
 
-  console.log(mobile);
-
   useEffect(() => {
     if (mobile) {
       document.documentElement.style.overflowY = "hidden";

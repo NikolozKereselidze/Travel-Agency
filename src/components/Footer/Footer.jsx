@@ -12,7 +12,8 @@ const Footer = () => {
   const list = [
     {
       heading: "Menu",
-      listItems: ["Home", "Explore", "Travel", "Blog", "Testimonials"],
+      listItems: ["Home", "Destinations", "Offer", "Blog", "Testimonials"],
+      hrefs: true,
     },
     {
       heading: "Information",
@@ -49,6 +50,7 @@ const Footer = () => {
             key={el.heading}
             heading={el.heading}
             listItems={el.listItems}
+            hrefs={el.hrefs}
           />
         ))}
         <NewsLetter />
