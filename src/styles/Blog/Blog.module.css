@@ -89,6 +89,7 @@
   .blogWrapper {
     flex-direction: column;
     gap: 3.4rem;
+    text-align: center;
   }
 
   .imgWrapper {
@@ -110,5 +111,9 @@
 
   .description > h3 {
     font-size: 2.4rem;
+  }
+
+  .readMore {
+    width: 100%;
   }
 }

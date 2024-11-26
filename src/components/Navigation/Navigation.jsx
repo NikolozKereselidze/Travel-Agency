@@ -7,14 +7,9 @@ const Navigation = ({ mobile, openModal, modalHandler }) => {
 
   useEffect(() => {
     if (mobile) {
-      document.documentElement.style.overflowY = "hidden";
-    } else {
-      document.documentElement.style.overflowY = "";
+      document.documentElement.style.overflowY = openModal ? "hidden" : "";
     }
-    return () => {
-      document.documentElement.style.overflowY = "";
-    };
-  }, [mobile]);
+  }, [mobile, openModal]);
 
   const handleActiveClick = (page, href) => {
     setActive(page);
@@ -31,41 +26,39 @@ const Navigation = ({ mobile, openModal, modalHandler }) => {
   ];
 
   return (
-    <>
-      <ul
-        className={`${styles.headerLinksWrapper} ${
-          mobile ? styles.mobile : ""
-        }`}
-      >
-        {mobile ? (
-          <i
-            className={`fa-regular fa-x ${styles.closeIcon}`}
-            onClick={modalHandler}
-          ></i>
-        ) : (
-          ""
-        )}
-        {links.map((link, index) => (
-          <li key={index}>
-            <a
-              href={link.href}
-              className={`${styles.headerLink} ${
-                active === link.name ? styles.active : ""
-              }`}
-              onClick={(e) => {
-                e.preventDefault();
-                handleActiveClick(link.name, link.href);
-                openModal && modalHandler();
-              }}
-            >
-              {link.name}
-            </a>
-          </li>
-        ))}
-      </ul>
-
-      {mobile ? "" : <HeroSidebar />}
-    </>
+    <ul
+      className={`${styles.headerLinksWrapper} ${
+        mobile
+          ? `${styles.mobile} ${openModal ? styles.open : styles.close}`
+          : ""
+      }`}
+    >
+      {mobile ? (
+        <i
+          className={`fa-regular fa-x ${styles.closeIcon}`}
+          onClick={modalHandler}
+        ></i>
+      ) : (
+        ""
+      )}
+      {links.map((link, index) => (
+        <li key={index}>
+          <a
+            href={link.href}
+            className={`${styles.headerLink} ${
+              active === link.name ? styles.active : ""
+            }`}
+            onClick={(e) => {
+              e.preventDefault();
+              handleActiveClick(link.name, link.href);
+              openModal && modalHandler();
+            }}
+          >
+            {link.name}
+          </a>
+        </li>
+      ))}
+    </ul>
   );
 };
 

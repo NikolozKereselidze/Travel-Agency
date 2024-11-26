@@ -10,18 +10,13 @@ const MobileNavigation = () => {
     setOpenModal((prev) => !prev);
   };
 
-  
   return (
     <>
-      {openModal ? (
-        <Navigation
-          mobile={true}
-          openModal={openModal}
-          modalHandler={modalHandler}
-        />
-      ) : (
-        ""
-      )}
+      <Navigation
+        mobile={true}
+        openModal={openModal}
+        modalHandler={modalHandler}
+      />
       <div className={styles.navWrapper}>
         <Logo />
         <i

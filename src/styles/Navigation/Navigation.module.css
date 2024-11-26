@@ -27,14 +27,33 @@
   padding-left: 0;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 3rem 4.2rem;
   margin-right: 2.2rem;
   position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: translateY(-20px);
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
+
+.mobile.open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.mobile.close {
+  opacity: 0;
+  transform: translateY(-20px);
+  pointer-events: none;
+}
+
 .mobile > li > a,
 .closeIcon {
-  color: #484747;
+  color: #2a2929;
   font-size: 2.4rem;
 }
 
