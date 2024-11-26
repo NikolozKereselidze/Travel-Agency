@@ -40,13 +40,14 @@ const HeroSidebar = () => {
           strokeLinejoin="round"
         />
       </svg>
-      <a href="#destinations">
+      <a href="#destinations" aria-label="Go to Destinations section">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"
           height="8"
           viewBox="0 0 16 8"
           fill="none"
+          aria-hidden="true"
         >
           <path
             d="M1 1L8 7L15 1"
