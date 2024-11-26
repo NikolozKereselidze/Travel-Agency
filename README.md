@@ -60,20 +60,37 @@ To get a local copy of the project up and running, follow these steps:
    npm install
    ```
 
-### Running the project
+### Installation
 
-To start the development server, run:
+To run this project locally, follow these steps:
 
-    ```sh
-    npm run dev
-    ````
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/NikolozKereselidze/Travel-Agency.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd travel-agency
+   ```
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
 
-Open your browser and navigate to http://localhost:3000 to see the application in action.
+### Usage
 
-### Running the project
+to start the development server, run:
 
-To build the project for production, run:
+```bash
+npm run dev
+```
 
-    ```sh
-    npm run build
-    ```
+Your website should now be running on [http://localhost:5173](http://localhost:5173).
+
+### Contact
+
+For any inquiries, feel free to reach out:
+
+- Email: [kereselidze.nikoloz7@gmail.com](mailto:kereselidze.nikoloz7@gmail.com)
+- LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/nikoloz-kereselidze/)
+- GitHub: [GitHub Profile](https://github.com/NikolozKereselidze)
