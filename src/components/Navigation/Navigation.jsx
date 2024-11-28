@@ -20,8 +20,8 @@ const Navigation = ({ mobile, openModal, modalHandler }) => {
     { name: "Home", href: "#home" },
     { name: "Explore", href: "#destinations" },
     { name: "Travel", href: "#offer" },
-    { name: "Blog", href: "#blog" },
     { name: "Testimonials", href: "#testimonials" },
+    { name: "Blog", href: "#blog" },
   ];
 
   return (

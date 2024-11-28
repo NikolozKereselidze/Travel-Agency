@@ -39,11 +39,11 @@ const HomeLayout = () => {
       <section className="sectionsWrapper" id="offer">
         <Offer />
       </section>
-      <section className="sectionsWrapper" id="blog">
-        <Blog />
-      </section>
       <section className="sectionsWrapper" id="testimonials">
         <Testimonials />
+      </section>
+      <section className="sectionsWrapper" id="blog">
+        <Blog />
       </section>
       <Footer />
     </motion.div>
