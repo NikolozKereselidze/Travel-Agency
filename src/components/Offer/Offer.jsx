@@ -7,7 +7,7 @@ import { useContext, useEffect } from "react";
 import { DestinationsContext } from "../AnimatedRoutes";
 
 const Offer = () => {
-  const destinations = useContext(DestinationsContext);
+  const { destinations } = useContext(DestinationsContext);
 
   const [ref, isIntersecting] = useIntersectionObserver();
 
@@ -35,6 +35,9 @@ const Offer = () => {
             starsCount={destination.starsCount}
             description={destination.description}
             price={destination.price}
+            plan={destination.plan}
+            benefits={destination.benefits}
+            icons={destination.icons}
           />
         ))}
       </div>

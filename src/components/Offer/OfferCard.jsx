@@ -1,10 +1,21 @@
-import { useRef, useState } from "react";
+import { useContext, useRef, useState } from "react";
 import styles from "../../styles/Offer/OfferCard.module.css";
 import { Link } from "react-router-dom";
+import { DestinationsContext } from "../AnimatedRoutes";
 
-const OfferCard = ({ location, image, starsCount, description, price }) => {
+const OfferCard = ({
+  location,
+  image,
+  starsCount,
+  description,
+  price,
+  plan,
+  benefits,
+  icons,
+}) => {
   const [imageLoaded, setImageLoaded] = useState(false);
   const imageRef = useRef(null);
+  const { setDestination } = useContext(DestinationsContext);
 
   return (
     <div className={styles.card}>
@@ -36,7 +47,20 @@ const OfferCard = ({ location, image, starsCount, description, price }) => {
             <span className={styles.priceValue}>{price}</span>
           </div>
           <h3 className={`${styles.info}`}>
-            <Link to="/trip" className={styles.info}>
+            <Link
+              to="/trip"
+              className={styles.info}
+              onClick={() => {
+                setDestination({
+                  location: location,
+                  description: description,
+                  price: price,
+                  plan: plan,
+                  benefits: benefits,
+                  icons: icons,
+                });
+              }}
+            >
               Details
             </Link>
           </h3>

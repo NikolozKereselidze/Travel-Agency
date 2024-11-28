@@ -3,9 +3,13 @@ import tbilisi from "../../../assets/test.jpg";
 import "./Trip.css";
 import TripDetail from "./TripDetail";
 import TripPlan from "./TripPlan";
+import { useContext } from "react";
 import { motion } from "framer-motion";
+import { DestinationsContext } from "../../AnimatedRoutes";
 
 const Trip = () => {
+  const { destination } = useContext(DestinationsContext);
+
   return (
     <>
       <motion.div
@@ -26,7 +30,7 @@ const Trip = () => {
           <Link to="/">
             <h2 className="trip-nav">Home</h2>
           </Link>
-          <h2 className="trip-header">Tbilisi, Georgia</h2>
+          <h2 className="trip-header">{destination.location}</h2>
         </div>
 
         <TripDetail />

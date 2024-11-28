@@ -137,6 +137,23 @@
   font-size: 1.4rem;
 }
 
+.trip-border {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.package-border {
+  align-items: flex-start;
+}
+
+.trip-border > i {
+  flex: 0 0 2rem;
+  justify-items: center;
+  color: #525866;
+  font-size: 1.5rem;
+}
+
 .trip-package {
   display: flex;
   flex-direction: column;
