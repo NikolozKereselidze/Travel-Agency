@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import styles from "../../styles/Offer/OfferCard.module.css";
+import { Link } from "react-router-dom";
 
 const OfferCard = ({ location, image, starsCount, description, price }) => {
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -34,7 +35,11 @@ const OfferCard = ({ location, image, starsCount, description, price }) => {
             <span className={styles.priceLabel}>From</span>
             <span className={styles.priceValue}>{price}</span>
           </div>
-          <h3 className={`${styles.info}`}>Details</h3>
+          <h3 className={`${styles.info}`}>
+            <Link to="/trip" className={styles.info}>
+              Details
+            </Link>
+          </h3>
         </div>
       </div>
     </div>

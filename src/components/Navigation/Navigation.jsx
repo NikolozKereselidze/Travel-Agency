@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import styles from "../../styles/Navigation/Navigation.module.css";
-import HeroSidebar from "../Hero/HeroSidebar.jsx";
 
 const Navigation = ({ mobile, openModal, modalHandler }) => {
   const [active, setActive] = useState("Home");

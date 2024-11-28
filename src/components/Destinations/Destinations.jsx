@@ -12,6 +12,7 @@ import venice from "../../assets/destinations/venice.webp";
 import lisbon from "../../assets/destinations/lisbon.webp";
 import tbilisi from "../../assets/destinations/tbilisi.webp";
 import paris from "../../assets/destinations/paris.webp";
+import { motion } from "framer-motion";
 
 const Destinations = () => {
   const destinations = [
@@ -55,7 +56,11 @@ const Destinations = () => {
   };
 
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opaity: 0 }}
+    >
       <SectionHeading
         title="Popular Destinations"
         description="Most popular destinations around the world, from historical places to natural wonders."
@@ -72,7 +77,7 @@ const Destinations = () => {
           ))}
         </Slider>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,0 +1,149 @@
+.trip-wrap {
+  display: flex;
+  flex-direction: column;
+  background-color: #1d1f24;
+  gap: 2.4rem;
+}
+
+.trip-heading {
+  position: relative;
+}
+
+.trip-nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: rgba(29, 31, 36, 0.55);
+  padding: 1.4rem;
+  position: absolute;
+  color: #fff;
+  font-size: 1.6rem;
+  cursor: pointer;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.trip-header {
+  text-align: center;
+  color: #fff;
+  font-size: 4.2rem;
+}
+
+/* TRIP DETAILS */
+
+.trip-detail {
+  width: 50%;
+  padding: 35px 88px 35px 88px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-self: center;
+  margin-top: -10rem;
+  z-index: 1;
+  background-color: #1d1f24;
+}
+
+.trip-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1.6rem;
+  border-bottom: 1px dashed #2e3138;
+}
+
+.trip-price > h3 {
+  color: #0084ff;
+  font-size: 1.8rem;
+}
+
+.trip-price > h3 > span {
+  color: #b7bfd3;
+  font-size: 1.3rem;
+}
+
+.trip-book--button {
+  background-color: #0084ff;
+  border: none;
+  color: #fff;
+  padding: 1.4rem 3.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.trip-overview {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.trip-overview h3 {
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.trip-overview p {
+  color: #868c9b;
+  font-size: 1.4rem;
+  line-height: 1.8;
+}
+
+/* TRIP PLAN */
+
+.trip-plan {
+  display: flex;
+  gap: 1.2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #1d1f24;
+  padding: 4rem;
+}
+
+.trip-plan > h3 {
+  font-size: 2.4rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+.trip-plan--wrapper {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #2e3138;
+}
+
+.trip-col {
+  display: flex;
+}
+
+.trip-border {
+  padding: 2rem;
+  border-right: 1px solid #2e3138;
+  border-bottom: 1px solid #2e3138;
+  width: 30%;
+}
+
+.trip-no--border {
+  flex: 1 1 0;
+  padding: 2rem;
+  border-bottom: 1px solid #2e3138;
+}
+
+.trip-border > p,
+.trip-no--border > p {
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.trip-package {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.trip-package p > i {
+  margin-right: 1.2rem;
+  color: green;
+}
