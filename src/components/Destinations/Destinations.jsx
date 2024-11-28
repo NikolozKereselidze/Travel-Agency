@@ -12,9 +12,19 @@ import venice from "../../assets/destinations/venice.webp";
 import lisbon from "../../assets/destinations/lisbon.webp";
 import tbilisi from "../../assets/destinations/tbilisi.webp";
 import paris from "../../assets/destinations/paris.webp";
-import { motion } from "framer-motion";
+import useIntersectionObserver from "../../hooks/useIntersectionObserver";
+import { useEffect } from "react";
 
 const Destinations = () => {
+  const [ref, isIntersecting] = useIntersectionObserver();
+
+  useEffect(() => {
+    if (isIntersecting) {
+      ref.current.classList.add(styles.visible);
+    }
+    console.log(isIntersecting);
+  }, [isIntersecting, ref]);
+
   const destinations = [
     { image: tbilisi, title: "Old Tbilisi", location: "Tbilisi, Georgia" },
     { image: paris, title: "Eiffel Tower", location: "Paris, France" },
@@ -56,10 +66,11 @@ const Destinations = () => {
   };
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opaity: 0 }}
+    <div
+      ref={ref}
+      className={`${styles.destinationsWrapper} ${
+        isIntersecting ? "animate" : ""
+      }`}
     >
       <SectionHeading
         title="Popular Destinations"
@@ -77,7 +88,7 @@ const Destinations = () => {
           ))}
         </Slider>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

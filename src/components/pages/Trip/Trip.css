@@ -164,3 +164,128 @@
   margin-right: 1.2rem;
   color: green;
 }
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1152px) {
+  .trip-plan--wrapper {
+    width: 60%;
+  }
+
+  .trip-header {
+    font-size: 3.6rem;
+  }
+
+  .trip-detail {
+    padding: 3.5rem 6.8rem;
+    width: 60%;
+  }
+
+  .trip-price > h3 {
+    font-size: 1.6rem;
+  }
+
+  .trip-book--button {
+    padding: 1rem 2.8rem;
+  }
+
+  .trip-overview > h3 {
+    font-size: 1.6rem;
+  }
+
+  .trip-plan > h3 {
+    font-size: 2rem;
+  }
+
+  .trip-border > p,
+  .trip-no--border > p {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 832px) {
+  .trip-detail {
+    padding: 3.5rem 4.8rem;
+    width: 70%;
+  }
+
+  .trip-header {
+    font-size: 3.2rem;
+  }
+
+  .trip-price > h3,
+  .trip-overview > h3,
+  .trip-nav {
+    font-size: 1.4rem;
+  }
+
+  .trip-plan--wrapper {
+    width: 80%;
+  }
+
+  .trip-border {
+    flex: 1 1 0;
+    gap: 0.8rem;
+  }
+
+  .trip-no--border,
+  .trip-border {
+    padding: 1.2rem;
+  }
+
+  .trip-border > i {
+    font-size: 1.3rem;
+  }
+
+  .trip-no--border {
+    flex: 2 1 0;
+  }
+
+  .trip-border > p,
+  .trip-no--border > p {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .trip-detail {
+    padding: 3.5rem 4rem;
+    width: 80%;
+  }
+
+  .trip-header {
+    font-size: 3rem;
+  }
+
+  .trip-price > h3,
+  .trip-overview > h3,
+  .trip-nav,
+  .trip-overview p {
+    font-size: 1.3rem;
+  }
+
+  .trip-plan > h3 {
+    font-size: 1.8rem;
+  }
+
+  .trip-book--button {
+    padding: 0.8rem 2.2rem;
+  }
+
+  .trip-plan--wrapper {
+    width: 100%;
+  }
+
+  .trip-border {
+    gap: 0.2rem;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .trip-detail {
+    width: 90%;
+  }
+
+  .trip-plan {
+    padding: 2rem;
+  }
+}

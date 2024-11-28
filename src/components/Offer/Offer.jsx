@@ -1,15 +1,13 @@
 import SectionHeading from "../SectionHeading";
 import OfferCard from "./OfferCard";
-
 import styles from "../../styles/Offer/Offer.module.css";
-import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 import { useContext, useEffect } from "react";
 import { DestinationsContext } from "../AnimatedRoutes";
+import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 
 const Offer = () => {
-  const { destinations } = useContext(DestinationsContext);
-
   const [ref, isIntersecting] = useIntersectionObserver();
+  const { destinations } = useContext(DestinationsContext);
 
   useEffect(() => {
     if (isIntersecting) {
@@ -19,8 +17,8 @@ const Offer = () => {
 
   return (
     <div
-      ref={ref}
       className={`${styles.offerWrapper} ${isIntersecting ? "animate" : ""}`}
+      ref={ref}
     >
       <SectionHeading
         title="Special Offer"
