@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import tbilisi from "../../../assets/test.jpg";
+import tbilisi from "../../../assets/trip.jpg";
 import "./Trip.css";
 import TripDetail from "./TripDetail";
 import TripPlan from "./TripPlan";
@@ -35,7 +35,7 @@ const Trip = () => {
             background: `url(${tbilisi})`,
             backgroundPosition: "center",
             backgroundSize: "cover",
-            padding: "150px 20px 170px 20px",
+            padding: "150px 20px 150px 20px",
           }}
         >
           <Link to="/">
