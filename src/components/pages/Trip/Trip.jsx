@@ -1,14 +1,25 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import tbilisi from "../../../assets/test.jpg";
 import "./Trip.css";
 import TripDetail from "./TripDetail";
 import TripPlan from "./TripPlan";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { motion } from "framer-motion";
 import { DestinationsContext } from "../../AnimatedRoutes";
 
 const Trip = () => {
   const { destination } = useContext(DestinationsContext);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!destination) {
+      navigate("/error");
+    }
+  }, [destination, navigate]);
+
+  if (!destination) {
+    return null; // or a loading spinner
+  }
 
   return (
     <>

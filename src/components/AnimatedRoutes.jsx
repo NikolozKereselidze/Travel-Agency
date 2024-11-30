@@ -7,6 +7,7 @@ import kyoto from "../assets/destinations/kyoto.webp";
 import rome from "../assets/destinations/rome.webp";
 import tokyo from "../assets/destinations/tokyo.webp";
 import { createContext } from "react";
+import ErrorPage from "./pages/ErrorPage.jsx";
 
 const Wrapper = ({ children }) => {
   const location = useLocation();
@@ -100,6 +101,7 @@ const AnimatedRoutes = () => {
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<HomeLayout />} />
             <Route path="/trip" element={<Trip />} />
+            <Route path="*" element={<ErrorPage />} />
           </Routes>
         </Wrapper>
       </AnimatePresence>

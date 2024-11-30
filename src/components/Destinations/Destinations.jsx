@@ -22,7 +22,6 @@ const Destinations = () => {
     if (isIntersecting) {
       ref.current.classList.add(styles.visible);
     }
-    console.log(isIntersecting);
   }, [isIntersecting, ref]);
 
   const destinations = [
