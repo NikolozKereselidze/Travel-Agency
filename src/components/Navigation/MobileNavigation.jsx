@@ -20,7 +20,7 @@ const MobileNavigation = () => {
       <div className={styles.navWrapper}>
         <Logo />
         <i
-          className={`fa-regular fa-bars ${styles.navIcon}`}
+          className={`fa-solid fa-bars ${styles.navIcon}`}
           onClick={modalHandler}
         ></i>
       </div>
